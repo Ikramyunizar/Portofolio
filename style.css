@@ -1,0 +1,196 @@
+:root {
+    --main-scheme: #512b58;
+    --secondary-scheme: #2a7886;
+    --tertiary-scheme: #79bac1;
+    --last-scheme: #f1f3f4;
+}
+
+.main-bg {
+    background-color: var(--main-scheme);
+}
+
+.secondary-bg{
+    background-color: var(--secondary-scheme);
+}
+.tertiary-bg{
+    background-color: var(--tertiary-scheme);
+}
+.last-bg{
+    background-color: var(--last-scheme);
+}
+
+.fa-color {
+    color: var(--main-scheme)
+}
+
+body{
+    background-color: var(--last-scheme);
+    font-family: 'Montserrat'
+
+}
+
+.nav-link {
+    color: var(--last-scheme);
+}
+
+#title{
+    padding: 15% 10% 10%;
+    background-color:;
+}
+
+.container-fluid{
+    padding: 0%;
+}
+
+.main-title {
+    font-family: 'Montserrat Subrayada'
+}
+
+.second-title {
+    font-family: 'Montserrat Subrayada'
+}
+
+.profile-picture {
+    height: 60%;
+    width: 40%;
+}
+
+
+#introduction {
+    margin: 0% 0%;
+    padding: 0% 10%;
+}
+
+.section-header {
+    border-bottom: 5px solid;
+    padding: 0% 0% 1%;
+    font-size: 2rem;
+    font-weight: 800;
+    border-color: var(--main-scheme);
+}
+
+.box-layout {
+    background-color: var(--last-scheme);
+    border-radius: 25px;
+    text-align: center;
+    height: 30%;
+    margin: 5px;
+    border: groove 2px;
+    border-color: var(--tertiary-scheme);
+    transition: 1s;
+}
+
+.box-layout:hover {
+    background-color: var(--secondary-scheme);
+
+}
+
+
+
+.skills-image{
+    height: 8rem;
+    width: 8rem;
+    padding: 5% 0%;
+}
+
+
+#Skills {
+    padding: 5% 10%;
+}
+.top-marginal{
+    padding-top: 5%;
+}
+.box-content {
+    padding: 5% 5% 10%;
+}
+
+
+
+#projects {
+    padding: 5% 10%;
+}
+
+.box-layout-project {
+    background-color: var(--last-scheme);
+    border-radius: 10px;
+    text-align: center;
+    height: 40%;
+    margin: 5px;
+    border: groove 2px;
+    border-color: var(--tertiary-scheme);
+    padding: 1%;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-images {
+    height: 10rem;
+    width: 15rem;
+}
+
+.modal-body  h6 {
+    border-bottom: 2px solid;
+    padding: 3% 0%;
+    font-size:1rem;
+}
+
+.modal-body p {
+    padding: 3% 0% 0%;
+    text-align: justify;
+}
+
+.modal-body ul {
+    padding-top: 3% ;
+}
+
+
+.project-content {
+    font-family: 'Merriweather';
+}
+
+#contact {
+    padding: 2% 5%;
+    background-color: #2a7886;
+}
+
+.contact-box {
+    padding: 2%;
+    border: aliceblue solid;
+    border: ;
+    border-radius: 25px ;
+    background-color:var(--last-scheme);
+    box-shadow: 5px 5px var(--main-scheme);
+}
+.contact-title {
+    color: var(--main-scheme);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--secondary-scheme);
+    color: var(--main-scheme);
+    font-weight: 700;
+    transition: 0,2s;
+}
+
+.contact-button:hover {
+    background-color:var(--main-scheme);
+    color: white;
+}
+
+.fixed-top {
+    padding: 0% 5%;
+}
+
+#footer {
+    background-color: var(--main-scheme);
+    color: var(--last-scheme);
+    padding: 3% 5% ;
+}
