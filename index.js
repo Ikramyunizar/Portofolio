@@ -16,9 +16,8 @@ function scrollContact(params) {
     document.querySelector("#contact").scrollIntoView({behavior:"smooth"});
 }
 
-$(function() {
-    $('.enlarge').on('click', function() {
-        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-        $('#imagemodal').modal('show');   
-    });     
-});
+$(function(){
+    $(".enlarge").click(function() {
+        $(".modal-zoom").attr("src", $(this).find("img").attr('src'))
+    })
+})
