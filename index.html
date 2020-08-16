@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikram Yunizar Portofolio</title>
-    <link rel="stylesheet" href="..\css\css\bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,47 +16,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light main-bg">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mr-auto" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#title" onclick="scrollTitle();">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills" onclick="scrollSkill()">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects" onclick="scrollProject()" id="nav-project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="" onclick="scrollContact()">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
     <div class="container-fluid">
         <section id="title">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="main-title">Ikram Yunizar</h1>
-                    <h2 class="second-title">Web Developer</h2>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="images/profil.png" class="profile-picture" alt="">
+                <div class="col-md-12 text-center">
+                    <h1 class="main-title" data-aos="fade-up">Ikram Yunizar</h1>
+                    <h2 class="second-title" data-aos="fade-up">Web Developer</h2>
                 </div>
             </div>
         </section>
 
         <section id="introduction">
             <div class="row">
-                <div class="col">
-                    <h4 class="section-header">Introduction</h4>
+                <div class="col" data-aos="fade-up">
+                    <h4 class="section-header" >Introduction</h4>
                     <p>Hello! My name is Ikram Yunizar. I am a 8th Semester Informatics Student of the Ilmu Komputer
                         Faculty of Universitas Pembangunan Jakarta. Without further ado, These are my portofolios!</p>
                 </div>
@@ -339,31 +312,51 @@
         <div class="row justify-content-center">
             <div class="col-md-3 box-layout-project" data-aos="zoom-in">
                 <h5 class="card-title">Covid 19 Cases Worldwide</h5>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ClinicModal">
+                <button type="button" id="covid" class="btn btn-primary editmodal" data-toggle="modal" data-target="#minimodal">
                     Project details
                 </button>
             </div>
             <div class="col-md-3 box-layout-project" data-aos="zoom-in">
                 <h5 class="card-title">Drum Kit</h5>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ClinicModal">
+                <button type="button" id="drum" class="btn btn-primary editmodal" data-toggle="modal" data-target="#minimodal">
+                    Project details
+                </button>
+            </div>
+            <div class="col-md-3 box-layout-project" data-aos="zoom-in">
+                <h5 class="card-title">MailChimp POST API</h5>
+                <button type="button" id="mailchimp" class="btn btn-primary editmodal" data-toggle="modal" data-target="#minimodal">
                     Project details
                 </button>
             </div>
             <div class="col-md-3 box-layout-project" data-aos="zoom-in">
                 <h5 class="card-title">Clinic Application</h5>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ClinicModal">
-                    Project details
-                </button>
-            </div>
-            <div class="col-md-3 box-layout-project" data-aos="zoom-in">
-                <h5 class="card-title">Clinic Application</h5>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ClinicModal">
+                <button type="button" class="btn btn-primary editmodal" data-toggle="modal" data-target="#minimodal">
                     Project details
                 </button>
             </div>
 
         </div>
     </section>
+
+    <div class="modal fade" id="minimodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title modal-title-mini" id="exampleModalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body modal-body-mini">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" href="" class="btn btn-primary btn-link">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <section id="contact" class="">
         <div class="row contact-box" data-aos="zoom-in">
