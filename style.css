@@ -2,7 +2,7 @@
     --main-scheme: #512b58;
     --secondary-scheme: #2a7886;
     --tertiary-scheme: #79bac1;
-    --last-scheme: #f1f3f4;
+    --last-scheme: #fafaff;
 }
 
 .main-bg {
@@ -25,7 +25,7 @@
 
 body{
     background-color: var(--last-scheme);
-    font-family: 'Montserrat'
+    font-family: 'Merriweather';
 
 }
 
@@ -34,7 +34,7 @@ body{
 }
 
 #title{
-    padding: 15% 10% 10%;
+    padding: 10% 10% 10%;
     background-color:;
 }
 
@@ -180,6 +180,10 @@ body{
 
 #miniProjects {
     padding: 5% 10%;
+}
+
+.btn-link {
+    color: white;
 }
 
 #contact {
