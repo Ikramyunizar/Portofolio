@@ -44,3 +44,26 @@ $(".editmodal").click((e) =>{
             break;
     }
 })
+
+
+var modal = document.getElementById("image-modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+$(".modal-image").click((e) =>{
+    
+    let imagesrc = e.target.src
+    console.log(imagesrc);
+    $("#image-modal").css("display", "block");
+    $("#img01").attr("src", imagesrc);
+
+
+})
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close-img")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    console.log("clicked")
+    $("#image-modal").css("display", "none");
+} 
